@@ -53,7 +53,7 @@ const cardAppender = (selector) => {
   .get("https://lambda-times-api.herokuapp.com/articles")
   .then((res) => {
       const articles = res.data.message;
-      
+      console.log(articles);
   }
   .catch((err) => {
     console.log(err);
